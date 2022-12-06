@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 openai.api_key = "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"
-pickled_model = pickle.load(open('/Users/justincun/DSC180A/project-info/starter-stream-py/src/astra_streaming/logistic_regression_model.pkl', 'rb'))        
+pickled_model = pickle.load(open('~/logistic_regression_model.pkl', 'rb'))        
 
 def encode(input_text):
     response = openai.Embedding.create(
@@ -61,8 +61,8 @@ class Consumer(object):
                     plt.ylabel('Counts')
                     plt.xticks(rotation=0)
                     plt.xlabel('Sentiment')
-                    plt.savefig('/Users/justincun/DSC180A/project-info/starter-stream-py/src/astra_streaming/results_chart.png')
-                    df.to_csv('/Users/justincun/DSC180A/project-info/starter-stream-py/src/astra_streaming/results_df.csv')  
+                    plt.savefig('~/results_chart.png')
+                    df.to_csv('~/results_df.csv')  
                     print(df)
                     print(values)
 
