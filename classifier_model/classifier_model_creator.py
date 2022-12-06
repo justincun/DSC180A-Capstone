@@ -22,3 +22,8 @@ def encode(input_text):
 def classify_text(input_text):
   max_id = clf.predict_proba([encode(input_text)]).argmax()
   return clf.classes_[max_id]
+
+# You can run the classifer on any tweet using the classify_text function - 
+# print(classify_text("This is a really terrible tweet"))
+
+pickle.dump(clf, open('logistic_regression_model.pkl', 'wb'))
