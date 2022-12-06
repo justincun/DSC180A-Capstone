@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 
 
 openai.api_key = "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"
-pickled_model = pickle.load(open('~/logistic_regression_model.pkl', 'rb'))        
+pickled_model = pickle.load(open('classifier_model/logistic_regression_model.pkl', 'rb'))        
 
 def encode(input_text):
     response = openai.Embedding.create(
