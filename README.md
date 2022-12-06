@@ -7,4 +7,4 @@ The producer_test.py file helps produce the tweets and need to be run first. The
 
 The /classifier_model folder has the classifier_model_creator.py file which created the logistic regression classifier pickle file. The classifier_model_creator uses training_twitter_data.pkl and twitter_embeddings.pkl file as training data to train the logistic regression model on. 
 
-## Make sure to replace 
+#### Make sure to replace 
