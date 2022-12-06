@@ -4,8 +4,8 @@ import pickle
 from sklearn.linear_model import LogisticRegression
 import openai
 
-df = pd.read_pickle('training_twitter_data.pkl')
-encodes = pd.read_pickle'twitter_embeddings.pkl')
+df = pd.read_pickle('~/training_twitter_data.pkl')
+encodes = pd.read_pickle'~/twitter_embeddings.pkl')
 
 X = encodes
 y = df['labels']
